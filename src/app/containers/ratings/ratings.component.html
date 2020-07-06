@@ -1,0 +1,6 @@
+<app-star 
+    *ngFor="let item of stars trackBy: trackById"
+    [starSize]="starSize"
+    [isSelected]="item.selected"
+    (click)="starsColor(item)">
+</app-star>

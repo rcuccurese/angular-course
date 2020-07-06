@@ -1,0 +1,9 @@
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6 mb-4" *ngFor="let obj of listaObj; trackBy:trackById; let i = index; let odd = odd">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <app-card [card]=obj (value)="this.newFilmValutation($event)"></app-card>       
+            </div>
+        </div>
+    </div>
+</div>
